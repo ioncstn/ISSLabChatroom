@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.LoggedInController">
+   <children>
+      <ListView fx:id="messages_view" layoutX="14.0" layoutY="39.0" prefHeight="362.0" prefWidth="468.0" />
+      <TextArea fx:id="text_field" layoutX="14.0" layoutY="408.0" prefHeight="47.0" prefWidth="468.0" />
+      <Button layoutX="14.0" layoutY="459.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="26.0" prefWidth="468.0" text="send" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="716.0" layoutY="459.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../src/main/resources/images/friends.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="hello_label" layoutX="14.0" layoutY="14.0" text="Hello, " />
+   </children>
+</AnchorPane>

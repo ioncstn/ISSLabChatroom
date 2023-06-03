@@ -1,1 +1,4 @@
 rootProject.name = "chatroom"
+include 'server'
+include 'untitled'
+

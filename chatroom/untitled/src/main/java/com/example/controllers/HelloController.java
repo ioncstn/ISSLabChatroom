@@ -1,4 +1,4 @@
-package com.example.chatroom;
+package com.example.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

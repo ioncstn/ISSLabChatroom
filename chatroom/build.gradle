@@ -24,7 +24,6 @@ tasks.withType(JavaCompile) {
 }
 
 application {
-    mainModule = 'com.example.chatroom'
     mainClass = 'com.example.chatroom.HelloApplication'
 }
 
@@ -37,6 +36,7 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
 }
 
 test {

@@ -7,15 +7,14 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatroom.HelloController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controllers.LogInController">
    <children>
-      <TextField layoutX="225.0" layoutY="134.0" />
-      <PasswordField layoutX="225.0" layoutY="200.0" />
+      <TextField fx:id="username" layoutX="225.0" layoutY="134.0" />
+      <PasswordField fx:id="password" layoutX="225.0" layoutY="200.0" />
       <Label layoutX="274.0" layoutY="99.0" text="username" />
       <Label layoutX="274.0" layoutY="168.0" text="password" />
-      <Button layoutX="276.0" layoutY="240.0" mnemonicParsing="false" text="log in" />
-      <Hyperlink layoutX="341.0" layoutY="284.0" text="Click here." />
+      <Button layoutX="276.0" layoutY="240.0" mnemonicParsing="false" onAction="#checkLogIn" text="log in" />
+      <Hyperlink layoutX="341.0" layoutY="284.0" onAction="#switchToRegisterWindow" text="Click here." />
       <Label layoutX="194.0" layoutY="287.0" text="Want to create an accout?" />
    </children>
 </AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.example.domain.Message"
+           table="Messages">
+        <id name="ID" column="id" type="int">
+            <generator class="increment"/>
+        </id>
+        <property
+                name="text"
+                column="text"
+                type="string"
+        />
+        <property
+                name="username"
+                column="sender"
+                type="string"
+        />
+        <property
+                name="receiver"
+                column="receiver"
+                type="string"
+        />
+    </class>
+</hibernate-mapping>
